@@ -39,11 +39,17 @@
                             <tbody>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（漢字）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：ＴＩＳ　太郎</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：ＴＩＳ　太郎</p>
                                     <div class="field" th:classappend="${errors.hasError('kanjiName')} ? 'error'">
                                         <input type="text" name="kanjiName" th:value="${form.kanjiName}"/>
                                         <p th:if="${errors.hasError('kanjiName')}"
@@ -54,11 +60,17 @@
                             </tr>
                             <tr>
                                 <td style="white-space: nowrap;">
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（カタカナ）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p >＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：ティーアイエス　タロウ</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：ティーアイエス　タロウ</p>
                                     <div class="field" th:classappend="${errors.hasError('kanaName')} ? 'error'">
                                         <input type="text" name="kanaName" th:value="${form.kanaName}"/>
                                         <p th:if="${errors.hasError('kanaName')}"
@@ -69,11 +81,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（ローマ字）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：TIS TAROU</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：TIS TAROU</p>
                                     <div class="field" th:classappend="${errors.hasError('alphabetName')} ? 'error'">
                                         <input type="text" name="alphabetName" th:value="${form.alphabetName}"/>
                                         <p th:if="${errors.hasError('alphabetName')}"
@@ -84,11 +102,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>性別</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div th:each="item : ${genderTypes}" class="field"
+                                    <div style="color: black; display: inline-block; _display: inline;" th:each="item : ${genderTypes}" class="field"
                                          th:classappend="${errors.hasError('gender')} ? 'error'">
                                         <input type="radio" name="gender" th:value="${item.code}"
                                                th:text="${item.label}" th:field="*{gender}"
@@ -103,11 +125,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>生年月日（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：1990/01/01</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：1990/01/01</p>
                                     <div class="field" th:classappend="${errors.hasError('dateOfBirth')} ? 'error'">
                                         <input type="text" name="dateOfBirth" th:value="${form.dateOfBirth}"/>
                                         <p th:if="${errors.hasError('dateOfBirth')}"
@@ -118,11 +146,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>郵便番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：123-4567</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：123-4567</p>
                                     <div class="field" th:classappend="${errors.hasError('zipCode')} ? 'error'">
                                         <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>
                                         <p th:if="${errors.hasError('zipCode')}"
@@ -133,11 +167,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>ご住所（全角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：東京都新宿区西新宿８－１７－１</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：東京都新宿区西新宿８－１７－１</p>
                                     <div class="field" th:classappend="${errors.hasError('address')} ? 'error'">
                                         <input type="text" name="address" th:value="${form.address}"/>
                                         <p th:if="${errors.hasError('address')}"
@@ -148,11 +188,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>自宅電話番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                        <p>例：00-1111-2222</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：00-1111-2222</p>
                                     <div class="field" th:classappend="${errors.hasError('homePhoneNumber')} ? 'error'">
                                         <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}"/>
                                         <p th:if="${errors.hasError('homePhoneNumber')}"
@@ -163,11 +209,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>携帯電話番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                        <p>例：080-0000-0000</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：080-0000-0000</p>
                                     <div class="field"
                                          th:classappend="${errors.hasError('mobilePhoneNumber')} ? 'error'">
                                         <input type="text" name="mobilePhoneNumber"
@@ -180,11 +232,17 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>メールアドレス（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：tiscon@example.com</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <p>例：tiscon@example.com</p>
                                     <div class="field" th:classappend="${errors.hasError('emailAddress')} ? 'error'">
                                         <input type="text" name="emailAddress" th:value="${form.emailAddress}"/>
                                         <p th:if="${errors.hasError('emailAddress')}"
@@ -199,7 +257,7 @@
                                     <p style="color:red;">＊</p>
                                 </td>
                                 <td>
-                                    <div th:each="item : ${marriedTypes}" class="field"
+                                    <div style="color: black; display: inline-block; _display: inline;" th:each="item : ${marriedTypes}" class="field"
                                          th:classappend="${errors.hasError('married')} ? 'error'">
                                         <input type="radio" name="married" th:value="${item.code}"
                                                th:text="${item.label}" th:field="*{married}"
