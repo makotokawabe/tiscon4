@@ -39,8 +39,15 @@
                             <tbody>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（漢字）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：ＴＩＳ　太郎</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：ＴＩＳ　太郎</p>
@@ -54,8 +61,15 @@
                             </tr>
                             <tr>
                                 <td style="white-space: nowrap;">
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（カタカナ）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p >＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：ティーアイエス　タロウ</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：ティーアイエス　タロウ</p>
@@ -69,8 +83,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>お名前（ローマ字）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：TIS TAROU</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：TIS TAROU</p>
@@ -84,11 +105,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>性別</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
-                                    <div th:each="item : ${genderTypes}" class="field"
+                                    <div style="color: black; display: inline-block; _display: inline;" th:each="item : ${genderTypes}" class="field"
                                          th:classappend="${errors.hasError('gender')} ? 'error'">
                                         <input type="radio" name="gender" th:value="${item.code}"
                                                th:text="${item.label}" th:field="*{gender}"
@@ -263,8 +288,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>郵便番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：123-4567</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：123-4567</p>
@@ -278,8 +310,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>ご住所（全角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：東京都新宿区西新宿８－１７－１</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：東京都新宿区西新宿８－１７－１</p>
@@ -293,8 +332,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>自宅電話番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                        <p>例：00-1111-2222</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：00-1111-2222</p>
@@ -308,8 +354,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>携帯電話番号（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                        <p>例：080-0000-0000</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：080-0000-0000</p>
@@ -325,8 +378,15 @@
                             </tr>
                             <tr>
                                 <td>
+                                    <div style="color: black; display: inline-block; _display: inline;">
                                     <label>メールアドレス（半角）</label>
-                                    <p style="color:red;">＊</p>
+                                    </div>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                    <p>＊</p>
+                                    </div>
+                                    <div style="color: black; display: inline-block; _display: inline;">
+                                    <p>例：tiscon@example.com</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <p>例：tiscon@example.com</p>
@@ -344,7 +404,7 @@
                                     <p style="color:red;">＊</p>
                                 </td>
                                 <td>
-                                    <div th:each="item : ${marriedTypes}" class="field"
+                                    <div style="color: black; display: inline-block; _display: inline;" th:each="item : ${marriedTypes}" class="field"
                                          th:classappend="${errors.hasError('married')} ? 'error'">
                                         <input type="radio" name="married" th:value="${item.code}"
                                                th:text="${item.label}" th:field="*{married}"
