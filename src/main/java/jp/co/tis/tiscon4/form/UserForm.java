@@ -38,6 +38,21 @@ public class UserForm implements Serializable {
     @Domain("dateOfBirth")
     private String dateOfBirth;
 
+    /** 生年月日 */
+    @Required
+    @Domain("dateOfYear")
+    private String dateOfYear;
+
+    /** 生年月日 */
+    @Required
+    @Domain("dateOfMonth")
+    private String dateOfMonth;
+
+    /** 生年月日 */
+    @Required
+    @Domain("dateOfDate")
+    private String dateOfDate;
+
     /** 郵便番号 */
     @Required
     @Domain("zipCode")
