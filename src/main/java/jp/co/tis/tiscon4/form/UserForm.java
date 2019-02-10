@@ -38,21 +38,6 @@ public class UserForm implements Serializable {
     @Domain("dateOfBirth")
     private String dateOfBirth;
 
-    /** 生年月日 */
-    @Required
-    @Domain("dateOfYear")
-    private String dateOfYear;
-
-    /** 生年月日 */
-    @Required
-    @Domain("dateOfMonth")
-    private String dateOfMonth;
-
-    /** 生年月日 */
-    @Required
-    @Domain("dateOfDate")
-    private String dateOfDate;
-
     /** 郵便番号 */
     @Required
     @Domain("zipCode")
@@ -67,6 +52,16 @@ public class UserForm implements Serializable {
     @Required
     @Domain("homePhoneNumber")
     private String homePhoneNumber;
+
+    /** 自宅電話番号 */
+    @Required
+    @Domain("homePhoneNumber2")
+    private String homePhoneNumber2;
+
+    /** 自宅電話番号 */
+    @Required
+    @Domain("homePhoneNumber3")
+    private String homePhoneNumber3;
 
     /** 携帯電話番号 */
     @Required

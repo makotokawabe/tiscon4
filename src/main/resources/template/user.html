@@ -50,7 +50,6 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：ＴＩＳ　太郎</p>
                                     <div class="field" th:classappend="${errors.hasError('kanjiName')} ? 'error'">
                                         <input type="text" name="kanjiName" th:value="${form.kanjiName}"/>
                                         <p th:if="${errors.hasError('kanjiName')}"
@@ -72,7 +71,6 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：ティーアイエス　タロウ</p>
                                     <div class="field" th:classappend="${errors.hasError('kanaName')} ? 'error'">
                                         <input type="text" name="kanaName" th:value="${form.kanaName}"/>
                                         <p th:if="${errors.hasError('kanaName')}"
@@ -94,7 +92,6 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：TIS TAROU</p>
                                     <div class="field" th:classappend="${errors.hasError('alphabetName')} ? 'error'">
                                         <input type="text" name="alphabetName" th:value="${form.alphabetName}"/>
                                         <p th:if="${errors.hasError('alphabetName')}"
@@ -129,10 +126,13 @@
                             <tr>
                                 <td>
                                     <label>生年月日</label>
-                                    <p style="color:red;">＊</p>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
-                                        <select value="dateOfYear" >
+                                    <div class="haba">
+                                        <select>
                                             <option value="">-</option>
                                             <option value="1900">1900</option>
                                             <option value="1901">1901</option>
@@ -235,7 +235,7 @@
                                             <option value="1998">1998</option>
                                             <option value="1999">1999</option>
                                         </select>年
-                                        <select value="dateOfMonth" >
+                                        <select>
                                             <option value="">-</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -250,7 +250,7 @@
                                             <option value="11">11</option>
                                             <option value="12">12</option>
                                         </select>月
-                                        <select value="dateOfDate" >
+                                        <select >
                                             <option value="">-</option>
                                             <option value="1">1</option>
                                             <option value="2">2</option>
@@ -284,6 +284,7 @@
                                             <option value="30">30</option>
                                             <option value="31">31</option>
                                         </select>日
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -299,12 +300,9 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：123-4567</p>
-                                    <div class="field" th:classappend="${errors.hasError('zipCode')} ? 'error'">
-                                        <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}"/>
-                                        <p th:if="${errors.hasError('zipCode')}"
-                                           th:text="${errors.getMessage('zipCode')}" class="error-message">
-                                        </p>
+                                    <div class="haba">
+                                    <input type="text" />―
+                                    <input type="text"  />
                                     </div>
                                 </td>
                             </tr>
@@ -321,7 +319,6 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：東京都新宿区西新宿８－１７－１</p>
                                     <div class="field" th:classappend="${errors.hasError('address')} ? 'error'">
                                         <input type="text" name="address" th:value="${form.address}"/>
                                         <p th:if="${errors.hasError('address')}"
@@ -335,20 +332,18 @@
                                     <div style="color: black; display: inline-block; _display: inline;">
                                     <label>自宅電話番号（半角）</label>
                                     </div>
-                                    <div style="color: black; display: inline-block; _display: inline;">
-                                    <p>＊</p>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
                                     </div>
                                     <div style="color: black; display: inline-block; _display: inline;">
                                         <p>例：00-1111-2222</p>
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：00-1111-2222</p>
-                                    <div class="field" th:classappend="${errors.hasError('homePhoneNumber')} ? 'error'">
-                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}"/>
-                                        <p th:if="${errors.hasError('homePhoneNumber')}"
-                                           th:text="${errors.getMessage('homePhoneNumber')}" class="error-message">
-                                        </p>
+                                    <div class="haba">
+                                        <input type="text" name="homePhoneNumber"  size="20"  />―
+                                        <input type="text" name="homePhoneNumber2"  size="20" />―
+                                        <input type="text" name="homePhoneNumber3"  size="20" />
                                     </div>
                                 </td>
                             </tr>
@@ -365,14 +360,10 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：080-0000-0000</p>
-                                    <div class="field"
-                                         th:classappend="${errors.hasError('mobilePhoneNumber')} ? 'error'">
-                                        <input type="text" name="mobilePhoneNumber"
-                                               th:value="${form.mobilePhoneNumber}"/>
-                                        <p th:if="${errors.hasError('mobilePhoneNumber')}"
-                                           th:text="${errors.getMessage('mobilePhoneNumber')}" class="error-message">
-                                        </p>
+                                    <div class="haba">
+                                        <input type="text"  />―
+                                        <input type="text"  />―
+                                        <input type="text"  />
                                     </div>
                                 </td>
                             </tr>
@@ -389,7 +380,6 @@
                                     </div>
                                 </td>
                                 <td>
-                                    <p>例：tiscon@example.com</p>
                                     <div class="field" th:classappend="${errors.hasError('emailAddress')} ? 'error'">
                                         <input type="text" name="emailAddress" th:value="${form.emailAddress}"/>
                                         <p th:if="${errors.hasError('emailAddress')}"
@@ -401,7 +391,9 @@
                             <tr>
                                 <td>
                                     <label>配偶者有無</label>
-                                    <p style="color:red;">＊</p>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <div style="color: black; display: inline-block; _display: inline;" th:each="item : ${marriedTypes}" class="field"
@@ -418,10 +410,12 @@
                             <tr>
                                 <td>
                                     <label>昨年の所得</label>
-                                    <p style="color:red;">＊</p>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
-                                        <select value="Income" >
+                                        <select>
                                             <option value="">-</option>
                                             <option value="1">～200</option>
                                             <option value="2">200～300</option>
@@ -439,7 +433,10 @@
                             <tr>
                                 <td>
                                     <label>ご職業</label>
-                                    <p style="color:red;">＊</p></td>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
+                                    </div>
+                                </td>
                                 <td>
                                         <select name="job">
                                             <option th:each="item : ${jobTypes}" th:value="${item.code}"  th:text="${item.label}"
@@ -470,7 +467,9 @@
                             <tr>
                                 <td>
                                     <label>過去5年以内に、病気やケガで7日間以上にわたって医師の診察・検査・治療・投薬をうけたことがありますか</label>
-                                    <p style="color:red;">＊</p>
+                                    <div style="color: red; display: inline-block; _display: inline;">
+                                        <p>＊</p>
+                                    </div>
                                 </td>
                                 <td>
                                     <div th:each="item : ${treatedTypes}" class="field"

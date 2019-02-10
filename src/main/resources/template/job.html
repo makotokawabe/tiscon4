@@ -102,12 +102,11 @@
                                     <label>業種</label>
                                 </td>
                                 <td>
-                                    <div th:each="item : ${industryTypes}" class="field"
-                                         th:classappend="${errors.hasError('industryType')} ? 'error'">
-                                        <input type="radio" name="industryType" th:value="${item.code}"
-                                               th:text="${item.label}" th:field="*{industryType}"
-                                               th:checked="${form.industryType}==${item.code}"/>
-                                    </div>
+                                       <select name="industry">
+                                            <option th:each="item : ${industryTypes}" th:value="${item.code}"  th:text="${item.label}"
+                                                    th:field="*{industryType}"
+                                                    th:checked="${form.industryType}==${item.code}">[[${item.label}]]</option>
+                                        </select>
                                     <p th:if="${errors.hasError('industryType')}"
                                        th:text="${errors.getMessage('industryType')}" class="error-message">
                                     </p>
